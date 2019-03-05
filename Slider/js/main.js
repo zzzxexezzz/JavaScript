@@ -1,28 +1,74 @@
-//find elements
+/* //find button
 var prevBtn = document.getElementById('show-prev');
 var nextBtn = document.getElementById('show-next');
-var sliedImage = document.getElementById('slide-img');
-//subsr
-prevBtn.addEventListener('click', onShowPrevBtn);
-nextBtn.addEventListener('click', onShowNextBtn);
+var slideImg = document.getElementById('slide-img');
+//subscribe on events
+prevBtn.addEventListener('click', onShowBtnPrev);
+nextBtn.addEventListener('click', onShowBtnNext);
 
-var imagesUrls = [];
-imagesUrls.push('https://www.sunhome.ru/i/wallpapers/28/lotus-eliz-v3.1024x600.jpg');
-imagesUrls.push('https://mobimg.b-cdn.net/pic/v2/gallery/preview/aston_martin_aston_martin-avto-transport-25935.jpg');
-imagesUrls.push('https://commonpoll.com/processed-images/1500x/1405.jpg');
-imagesUrls.push('https://s1.1zoom.ru/big0/47/358153-admin.jpg');
+//create array images
+var urlsImage = [];
+urlsImage.push('http://webcraft.cc/products/rockstar-slider-jquery-touch-slidergallery/img/1.png');
+urlsImage.push('http://webcraft.cc/products/rockstar-slider-jquery-touch-slidergallery/img/2.png');
+urlsImage.push('http://webcraft.cc/products/rockstar-slider-jquery-touch-slidergallery/img/3.png');
+urlsImage.push('http://webcraft.cc/products/rockstar-slider-jquery-touch-slidergallery/img/4.png');
 
-var currentImage = 0;
-sliedImage.src = imagesUrls[currentImage];
+var currentTarget = 0;
 
-function onShowPrevBtn() {
-    currentImage--;
-    sliedImage.src = imagesUrls[currentImage]
-    prevBtn.disabled = true;
-       
+slideImg.src = urlsImage[currentTarget];
+prevBtn.disabled = true;
+
+
+function onShowBtnPrev() {
+    currentTarget--;
+    slideImg.src = urlsImage[currentTarget];
+    nextBtn.disabled = false;
+
+
+    //used just if(), disable prev button if need
+    if (currentTarget === 0) {
+        prevBtn.disabled = true;
+    }
 }
 
-function onShowNextBtn(){
-    currentImage++;
-    sliedImage.src = imagesUrls[currentImage];
+function onShowBtnNext() {
+    currentTarget++;
+    slideImg.src = urlsImage[currentTarget];
+    prevBtn.disabled = false;
+
+    //disable next button if need
+    if (currentTarget === (urlsImage.length - 1)) {
+        nextBtn.disabled = true;
+    }
 }
+
+/*****************************ООП 
+var lastSpeed = 0;
+var cars = {
+    model: 2121,
+    name: "Reno",
+    isTurn: false,
+    speed: 0,
+    engine: {
+        v: 1.8,
+        horsesPower: 123
+    },
+    start: function() {
+        this.isTurn = true;
+        //var lastSpeed = this.speed = 12;
+    }
+
+}
+
+if (cars.speed > lastSpeed) {
+    console.log('I gooooo')
+} else if (cars.speed === lastSpeed) {
+    console.log('not go')
+}
+
+alert(cars.isTurn);
+cars.start();
+alert(cars.isTurn);
+alert(cars.speed); */
+
+slider.start();
