@@ -70,6 +70,10 @@ alert(cars.isTurn);
 cars.start();
 alert(cars.isTurn);
 alert(cars.speed); */
+//let cont1 = document.querySelector("#my-slide1");
+//let cont2 = document.querySelector("#my-slide2");
 
-slider.start();
-slider2.start();
+let slider = createFactory.createNewSlider();
+let slider2 = createFactory.createNewSlider();
+slider.start('mY-slide1');
+slider2.start('mY-slide2');
