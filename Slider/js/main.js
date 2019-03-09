@@ -72,3 +72,4 @@ alert(cars.isTurn);
 alert(cars.speed); */
 
 slider.start();
+slider2.start();

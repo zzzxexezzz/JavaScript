@@ -1,9 +1,9 @@
-var slider = {
+var slider2 = {
     urlsImage: [],
     currentTarget: 0,
-    prevBtn: document.getElementById('show-prev'),
+    prevBtn: document.q('show-prev'),
     nextBtn: document.getElementById('show-next'),
-    slideImg: document.getElementById('slide-img'),
+    slideImg: document.getElementById('slide-img2'),
 
     start: function() {
         //Контекст вызова. (Замыкание)
