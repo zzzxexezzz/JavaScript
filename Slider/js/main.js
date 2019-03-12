@@ -73,7 +73,7 @@ alert(cars.speed); */
 //let cont1 = document.querySelector("#my-slide1");
 //let cont2 = document.querySelector("#my-slide2");
 
-let slider = createFactory.createNewSlider();
-let slider2 = createFactory.createNewSlider();
+let slider = new Slider();
+let slider2 = new Slider();
 slider.start('mY-slide1');
 slider2.start('mY-slide2');
