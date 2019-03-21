@@ -14,7 +14,6 @@ const App = () => {
         <li>test</li>
         <li>test</li>
         <li>test</li>
-        <li>test</li>
       </ul>
   </div>
   );
