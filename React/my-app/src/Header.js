@@ -4,7 +4,7 @@ const Header = () => {
       <div>
         <a href="#">Home</a>
         <a href="#">News Feed</a>
-        <a href="#">Mes3333sage</a>
+        <a href="#">Message</a>
       </div>
     ); 
   }
