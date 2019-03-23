@@ -1,8 +1,9 @@
 import React, { Component } from 'react';
 import logo from './logo.svg';
 import './App.css';
-import Tehnol from './Technolog.js';
 import Header from './Header.js';
+import Tehnol from './Technolog.js';
+
 
 const App = () => {
   return (
@@ -19,6 +20,8 @@ const App = () => {
   );
 
 }
+
+
 
 
 
