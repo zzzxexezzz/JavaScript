@@ -4,6 +4,11 @@
 }
 
 .posts img{
-    height: 10%;
-    border-radius: 50%;
+    width: auto;
+    height: 100px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+}
+.like{
+    color: black;
 }
