@@ -1,0 +1,10 @@
+  .nav{
+    grid-area: n;
+    background-color:aqua;
+    color: aliceblue;
+  }
+
+  .item{
+    color: white;
+    text-transform: uppercase;
+  }

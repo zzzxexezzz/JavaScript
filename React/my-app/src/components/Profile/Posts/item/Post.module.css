@@ -1,0 +1,9 @@
+.posts {
+    color:brown;
+    font-size: 20px;
+}
+
+.posts img{
+    height: 10%;
+    border-radius: 50%;
+}
