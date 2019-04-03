@@ -5,8 +5,8 @@ import Post from "./item/Post";
 
 const Posts = () => {
     return <div>Post
-        <Post message='Message for You' likeCounts='32'/>
-        <Post message='Test' likeCounts='4'/>
+        <Post message='Message for You' likeCounts='32' number='1'/>
+        <Post message='Test' likeCounts='4' number='2'/>
 
     </div>
 }
