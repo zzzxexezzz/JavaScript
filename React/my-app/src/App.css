@@ -8,3 +8,9 @@
   margin: 0 auto;
   grid-gap: 10px;
 }
+
+.app-wrapper-content{
+   grid-area: c;
+  background-color: aqua;
+
+}
