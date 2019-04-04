@@ -1,7 +1,7 @@
 .app-wrapper{
   display: grid;
   grid-template-rows: 60px  1fr;
-  grid-template-columns: 10fr 10fr;
+  grid-template-columns: 10fr 5fr;
   grid-template-areas: 
   "h h"
   "c n";

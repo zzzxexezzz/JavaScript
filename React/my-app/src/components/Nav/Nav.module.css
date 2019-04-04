@@ -1,10 +1,17 @@
   .nav{
     grid-area: n;
-    background-color:aqua;
+    background-color: aliceblue;
     color: aliceblue;
   }
 
   .item{
     color: white;
     text-transform:capitalize;
+  }
+
+  .item a{
+      color:#0791ff;
+      text-decoration: none;
+      cursor: pointer;
+      line-height: 1px;
   }
