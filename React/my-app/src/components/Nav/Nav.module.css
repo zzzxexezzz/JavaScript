@@ -1,8 +1,9 @@
-  .nav{
+.nav {
     grid-area: n;
     background-color: aliceblue;
     color: aliceblue;
-  }
+    padding: 20px;
+}
 
   .item{
     color: white;

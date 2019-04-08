@@ -13,8 +13,7 @@ import Seting from "./components/Seting/Seting";
 const App = (props) => {
     return(
     <BrowserRouter>
-            <div
-                className="app-wrapper">
+            <div className="app-wrapper">
                 <Header/>
                 <Nav/>
                 <div className='app-wrapper-content'>
