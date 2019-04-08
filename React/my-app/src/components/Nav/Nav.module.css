@@ -15,3 +15,7 @@
       cursor: pointer;
       line-height: 1px;
   }
+
+  .item a.active{
+      color: black;
+  }
