@@ -10,6 +10,9 @@
     padding: 10px;
 }
 
+a.active{
+    color: black;
+}
 .messages {
 padding: 10px;
 }

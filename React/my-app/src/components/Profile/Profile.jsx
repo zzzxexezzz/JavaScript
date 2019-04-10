@@ -1,17 +1,14 @@
 import React from 'react';
-import classes from'./Profile.module.css';
+/*import classes from'./Profile.module.css';*/
 import Post from './Posts/Posts';
+import ProfileInfo from "./ProfileInfo/ProfileInfo";
 
 const Profile =()=>{
     return(
         <div>
-        <div>
-            <img src="https://www.nastol.com.ua/pic/201209/1920x1200/nastol.com.ua-32997.jpg" width='40' alt=''/></div>
-        <div>
-          ava+discripteon
+            <ProfileInfo/>
+            <Post/>
         </div>
-        <Post/>
-      </div>
     )
 }
 
